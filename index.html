@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media screen and (max-width:1630px) {
+            section.allsong div.flex {
+                justify-content: space-between !important;
+                padding: 20px;
+            }
+
+            #songrec {
+                width: 60% !important;
+            }
+        }
+
+        @media screen and (max-width:1203px) {
+            .bottom .container {
+                position: static;
+            }
+.songinfo{
+    margin: 10px;
+}
+            section.allsong div.flex {
+                justify-content: space-between !important;
+                padding: 20px;
+            }
+
+            #songrec {
+                width: 100% !important;
+            }
+
+        }
+        @media screen and (max-width:966px) {
+            .songinfo{
+                display: none;
+                /* font-size: .5rem; */
+            }
+        }
+
+        @media screen and (max-width:750px) {
+            section.allsong div.flex {
+                justify-content: space-between !important;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            #songrec {
+                width: 100% !important;
+            }
+
+        }
+
+        @media screen and (max-width:750px) {
+            section.allsong div.flex {
+                justify-content: space-between !important;
+                padding: 20px;
+            }
+
+            #songrec {
+                width: 100% !important;
+            }
+
+        }
+
+        @media screen and (max-width:388px) {
+            section.allsong div.flex {
+                justify-content: space-between !important;
+                padding: 20px;
+            }
+
+            #songrec {
+                width: 100% !important;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="flex">
+            <img src="img/logo.png" id="logo" alt=""><span>Spotify</span>
+        </div>
+    </nav>
+    <section class="allsong">
+        <div class="container flex">
+            <h2>Best of collection - My Album here</h2>
+            <div class="songs">
+                <div class="songrec flex" id="songrec">
+                    <img src="img/covers/1.jpg"><span class="SongName">Let Giv them a name</span>
+                    <div> <span class="songTime">3:34 </span><i class="far danish fa-play-circle" id="0"></i></div>
+                </div>
+                <div class="songrec flex" id="songrec">
+                    <img src="img/covers/1.jpg"><span class="SongName">Let Giv them a name</span>
+                    <div> <span class="songTime">3:34 </span><i class="far danish fa-play-circle" id="1"></i></div>
+                </div>
+                <div class="songrec flex" id="songrec">
+                    <img src="img/covers/1.jpg"><span class="SongName">Let Giv them a name</span>
+                    <div> <span class="songTime">3:34 </span><i class="far danish fa-play-circle" id="2"></i></div>
+                </div>
+                <div class="songrec flex" id="songrec">
+                    <img src="img/covers/1.jpg"><span class="SongName">Let Giv them a name</span>
+                    <div> <span class="songTime">3:34 </span><i class="far danish fa-play-circle" id="3"></i></div>
+                </div>
+                <div class="songrec flex" id="songrec">
+                    <img src="img/covers/1.jpg"><span class="SongName">Let Giv them a name</span>
+                    <div> <span class="songTime">3:34 </span><i class="far danish fa-play-circle" id="4"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="container">
+            <input type="range" name="range" class="progress" value="0" id="progresshere">
+            <div class="buttons flex">
+                <i class="fas fa-3x fa-step-backward" id="back"></i>
+                <i class="far fa-3x fa-play-circle" id="play"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <div class="songinfo">
+                <img id="gif" src="./img/playing.gif" width="50px">
+                <span id="updatetitle">This is the song name here</span>
+            </div>
+        </div>
+    </section>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1a5eba4be8.js" crossorigin="anonymous"></script>
+    <!-- our script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
